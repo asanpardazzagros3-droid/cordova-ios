@@ -1,0 +1,11 @@
+- name: Instrument pipeline
+  # You may pin to the exact commit or the version.
+  # uses: autometrics-dev/instrument-pipeline@142e4e6cbc109bb37c705daa856b6462689b3ef8
+  uses: autometrics-dev/instrument-pipeline@v0.1.0
+  with:
+    # URL to the aggregation gateway, for example `http://localhost:9091`
+    pushgateway: 
+    # Type of the aggregation gateway, one of `prometheus`, `gravel`, or `zapier`. Currently only changes the url format in case of prometheus
+    gatewaytype: # optional
+    # Comma separated list of buckets for duration histogram, with or without the brackets []
+    buckets: # optional
