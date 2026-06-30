@@ -1,0 +1,17 @@
+- name: ci-driven-scan-github-action
+  # You may pin to the exact commit or the version.
+  # uses: PortSwigger/ci-driven-scan-github-action@3ca7af40501fd36adee1e93ef2117366d6c979cf
+  uses: PortSwigger/ci-driven-scan-github-action@v1.0.2
+  with:
+    # The URL of your Enterprise server.
+    enterprise-server-url: # optional
+    # The API key that you copied when you created an API user.
+    enterprise-api-key: # optional
+    # The URL of the website you want Burp Scanner to scan.
+    start-url: # optional
+    # You only need to input a correlation ID if you want to view the scan results on the Burp Suite Enterprise Edition web interface. You can use a text string up to 64 characters long.
+    correlation-id: # optional
+    # The filename used for the scan report. This filepath relates to the enterprise scan container.
+    report-file-path: # optional, default is ./burp_junit_report.xml
+    # The file path of your burp config file, this path must be an absolute path.
+    config-file-path: # optional, default is ./burp_config.yml
